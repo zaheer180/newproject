@@ -1,0 +1,378 @@
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.clr{
+    color: #20c19f;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1200 - 320))); 
+}
+.clr2{
+ 
+    color: #20c19f;
+    font-size: calc(12px + (12 - 10) * ((100vw - 320px) / (1200 - 320))); 
+}
+
+#banner{
+    background: url(image/carhero1.jpg);
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    object-fit: cover;
+   
+}
+banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(73, 71, 212, 0.1); /* Overlay color */
+    z-index: 1; /* Ensure it sits on top of the banner content */
+}
+
+#banner > * {
+    position: relative; /* Keep the content above the overlay */
+    z-index: 4000; /* Ensure content appears above the overlay */
+}
+.heading {
+    display: none;
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1200 - 320))); 
+    font-weight: bold;
+    margin-top: 20px;
+}
+.hres{
+    font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1200 - 320))); 
+    color:#20c19f ;
+    font-weight: bold;
+}
+.textres{
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1200 - 320)));
+    color: rgb(15,25,55);
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+    display: none;
+}
+input[type="text"],[type="date"],[type="time"], [type="email"],[type="tel"],[type="textarea"]{
+    border:2px solid #2b185c;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+h3{
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1200 - 320))); 
+
+}
+.lc{
+    display: inline-block;
+    background: #fff;
+     box-shadow:  1px 1px 10px #bebebe,
+     -1px -1px 5px  #bebebe;    
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold; 
+}
+.btn1{
+    outline: none;
+    border: none;
+    color: inherit;
+    margin-top: 10px;
+}
+
+/* Change the background when the label is clicked (selected) */
+input[type="radio"]:checked + label {
+    background-color: #20c19f;
+    color: white;
+}
+
+/* Hover effect for the labels */
+label:hover {
+    background-color: #ddd;
+}
+
+/* Hide the date, time, and center fields initially */
+#booking-details {
+    display: none;
+    margin-top: 20px;
+}
+
+.input-container {
+    margin-top: 10px;
+}
+textarea {
+    border:2px solid #2b185c;
+    border-radius:10px ;
+    
+}
+textarea::placeholder{
+    padding-top:20px;
+    padding-left: 10px;
+    color: #2b185c;
+   
+}
+.navbar-nav {
+    gap:20px
+}
+.navbar-nav .nav-item .nav-link{
+    color:#20c19f;
+    transition: all 0.5s ;
+    transition-timing-function:cubic-bezier(.17,.67,.83,.67);
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color:#FDC400 ;
+   
+    text-decoration: underline;
+    
+}
+
+
+.light-bg{
+   background-color:  #def7ea;
+    border-radius: 7px;
+}
+.bg{
+    border: 2px solid #30968b;
+    border-radius: 10px;
+    color:#30968b;
+  }
+  .card{
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  .buttonex{
+    padding: 10px 25px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    background: #20c19f;
+    color:rgb(234,234,234);
+    box-shadow: 0px 0px 10px #1f4c65;
+    cursor: pointer;
+    transition: 0.6s;
+   
+  }
+  .buttonex1{
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    background: #20c19f;
+    color:rgb(234,234,234);
+    box-shadow: 0px 0px 10px #1f4c65;
+    cursor: pointer;
+    transition: 0.6s;
+   
+  }
+  .buttonex:active,
+  .buttonex1:active
+  {
+    transform: scale(0.60);
+  }
+  .buttonex:hover,.buttonex1:hover{
+    background:linear-gradient(270deg, rgba(2, 29,78,0.682) 0%, rgba(31, 215, 232) 60%) ;
+    color:rgb(4, 4, 38)
+  }
+  .ft-text{
+    color:rgb(15,25,55) ;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .ft-links{
+    color:rgb(15,25,55) ;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  
+   
+  }
+  .ft-heading{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .ft-links:hover{
+    color: #30968b;
+  }
+  .carousel-indicators{
+    color:#30968b !important;
+  }
+  .cardb{
+    height: 200px;
+  }
+  .tt2{
+    padding: 10px 20px;
+  }
+  .card-image{
+    position: absolute;
+  
+  top: calc(50% - 25px);
+  left: 20px;
+   
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+ 
+   
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+border-radius: 50%;
+box-shadow: 0px 5px 10px #1f4c65;
+line-height: 10px;
+   
+  }
+  @media screen and (max-width:500px){
+.card-image{
+  top:-20px;
+  left: calc(50% - 25px);
+}
+  } 
+    
+  
+  .card-image2{
+    position: absolute;
+  
+  left: calc(50% - 25px);
+  top: 0px;
+   
+  width: 50px;
+  height:50px;
+  padding: 5px;
+  margin-bottom: 10px;
+   
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+border-radius: 50%;
+box-shadow: 0px 5px 10px #1f4c65;
+line-height: 10px;
+   
+  }
+  .accordion-item{
+    border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  .accordion-button{
+    color: #1f4c65;
+    background: #e4eeec;
+  }
+  .card-img-top{
+    height: 50px;
+    width: 50px;
+    margin:5px auto;
+    padding: 5px;
+    
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+border-radius: 50%;
+box-shadow: 0px 5px 10px #1f4c65;
+line-height: 10px;
+  }
+  .hh{
+    font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1200 - 320))); 
+    font-weight: 600 !important;
+    color: transparent !important;
+    background: linear-gradient(to right, #04bea6,35%, #f7941d) !important;
+    margin: 10px 0px 5px !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+}
+.sh{
+  font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1200 - 320)));
+  color: transparent !important;
+  background: linear-gradient(to right, #20c19f,35%, #f7941d) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+  
+section1{
+  display: grid;
+  place-items:center ;
+  height: 100vh;
+}
+.section-header{
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 25px;
+  color: #c91e1e;
+}
+.section-header:after{
+  content:"";
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #fff;
+}
+.section-header span{
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+.tstimonial{
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+ 
+}
+.single-item{
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  margin: 50px 15px;
+
+}
+.profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area{
+  margin: 0 15px 15px 15px;
+ 
+}
+.img-area img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid rgb(6, 175, 133);
+}
+.content{
+font-size: 18px;
+
+}
+.content p{
+  text-align: justify;
+}
+.content p span{
+  font-size: 48px;
+  margin-right: 20px;
+  color: rgb(9, 172, 163);
+}
+.social i{
+margin-right: 20px;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-color: rgb(19, 165, 170);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #000f0d;
+  padding: 15px;
+}
+.bb{
+  border-bottom: 5px solid #30968b;
+}
+  
