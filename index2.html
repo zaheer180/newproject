@@ -1,0 +1,207 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+  <div class="modal-body">
+<div class=" mb-1  ">
+<h2 class="text-center ">Online Lesson Booking</h2>
+<div class="row mx-2  " >
+    <div class="col-md-12 shadow-lg mt-2 py-3 text-center rounded  " id="lesson-details">
+       <h3>Select Transmission Type</h3>
+<!-- Radio buttons are hidden, but labels are clickable -->
+<div class="form-check"required >
+<input type="radio" id="manual" name="transmission" value="manual">
+<label for="manual" class="lc">Manual</label>
+
+<input type="radio" id="auto" name="transmission" value="auto" >
+<label for="auto"class="lc">Automatic</label>
+
+<h3>Select  The Course</h3>
+<!-- Hidden radio buttons and clickable labels for options -->
+<input type="radio" id="option1" name="option" value="option1">
+<label for="option1"class="lc" >5 Hours</label>
+
+<input type="radio" id="option2" name="option" value="option2">
+<label for="option2" class="lc">10 Hours </label>
+
+<input type="radio" id="option3" name="option" value="option3">
+<label for="option3" class="lc">12 Hours </label>
+
+<input type="radio" id="option4" name="option" value="option4">
+<label for="option4"class="lc" >15 Hours</label>
+
+<input type="radio" id="option5" name="option" value="option5">
+<label for="option5" class="lc">20 Hours</label>
+
+<input type="radio" id="option6" name="option" value="option6">
+<label for="option6"class="lc" >25 Hours</label>
+
+<input type="radio" id="option7" name="option" value="option7">
+<label for="option7"class="lc" >30 Hours </label>
+
+<input type="radio" id="option8" name="option" value="option8">
+<label for="option8"class="lc"  >35 Hours</label>
+
+<input type="radio" id="option9" name="option" value="option9">
+<label for="option9"class="lc" >40 Hours</label>
+<div id="heading" class="heading">Your Selection: </div>
+
+<h3  class="">Have you booked your test?</h3>
+<!-- Hidden radio buttons and clickable labels for booking status -->
+<input type="radio" id="bookedYes" name="booked" value="yes">
+<label for="bookedYes"class="lc" >Yes</label>
+
+<input type="radio" id="bookedNo" name="booked" value="no">
+<label for="bookedNo"class="lc" >No</label>
+  
+
+<!-- Date, Time, and Test Center fields, initially hidden -->
+
+
+  <div id="booking-details">
+
+      <div class="row">
+      <div class="col-md-6 col-lg-4 ">
+          <div class="input-container d-flex flex-column ">
+              <label for="test-date" class="text-start  ">Select Test Date:</label>
+              <input type="date" id="test-date" name="test-date" required>
+          </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+          <div class="input-container  d-flex flex-column ">
+              <label for="test-time"class="text-start " >Select Test Time:</label>
+              <input type="time" id="test-time" name="test-time" >
+          </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+          <div class="input-container  d-flex flex-column ">
+              <label for="test-center"class="text-start " >Test Center:</label>
+              <input type="text" id="test-center" name="test-center" placeholder="Enter test center name">
+          </div>
+      </div></div>
+ 
+ 
+  </div>
+  <div id="lesson-details">
+      <div class="row">
+          <div class="col-md-6">
+      <div class="input-container d-flex flex-column ">
+          <label for="lesson-date" class="text-start">Select Lesson Start Date:</label>
+          <input type="date" id="lesson-date" name="lesson-date"  required>
+      </div></div>
+      <div class="col-md-6">
+  
+      <div class="input-container d-flex flex-column">
+          <label for="lesson-time"class="text-start" >Select Lesson Start Time:</label>
+          <input type="time" id="lesson-time" name="lesson-time" placeholder="Enter the time">
+      </div></div></div>
+      <button class ="btn1 lc" id="next-button" type="button">Next</button>
+      
+  </div>
+    </div>
+</div>
+<div class="col-md-12  shadow-lg mt-1 py-3 text-center rounded"   id="user-details" style="display:none;">
+<div class="row  "   >
+ 
+ <div class="col-md-6  ">
+  <div class="input-container d-flex flex-column"  >
+      <label for="user-name "class="text-start" >Name:</label>
+      <input type="text"class="bg"  id="user-name" name="user-name" placeholder="Enter your name">
+  </div>
+</div>
+  <div class="col-md-6">
+  <div class="input-container d-flex flex-column">
+      <label for="user-phone"class="text-start">Phone Number:</label>
+      <input type="tel" id=" user-phone"   name="user-phone" placeholder="Enter your phone number">
+  </div>
+</div>
+<!-- </div>-->
+<div class="col-md-6">
+  <div class="input-container d-flex flex-column">
+      <label for="user-email"class="text-start">Email:</label>
+      <input type="email" id="user-email" name="user-email" placeholder="Enter your email">
+  </div>
+</div>
+  <div class="col-md-6">
+  <div class="input-container d-flex flex-column">
+      <label for="user-address"class="text-start" >Address:</label>
+      <input type="text" id="user-address" name="user-address" placeholder="Enter your address">
+  </div></div>
+</div>
+<div class="col-md-8 offset-md-2 px-3">
+  <div class="input-container d-flex flex-column">
+      <label for="user-message" class="text-start">Message:</label>
+      <textarea id="user-message" name="user-message" placeholder="Enter any additional information" rows="4"></textarea>
+  </div></div>
+<label>
+      <input type="checkbox" id="consent" name="consent" class="clr" required>
+      I agree  to the <a href="">privacy policy</a> of my data and <a href="terms And Conditions .html">terms&conditions</a>
+  </label>
+  <br>
+
+  <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+  <br>
+  <!-- Back and Submit buttons -->
+  <button  class ="btn1 lc"  id ="back-button" type="button">Back</button>
+  <a href="https://buy.stripe.com/cN2g0p12c58l03m9AB" class ="btn1  lc" id="submit-button" type="submit">Submit</a>
+</div>
+</div>
+
+</div>
+
+  </div>
+
+</div>
+    </div>
+   </div>
+   <div class="container"> 
+    <h3>Select Transmission Type</h3>
+<!-- Radio buttons are hidden, but labels are clickable -->
+   <div class="form-check"required >
+<input type="radio" id="manual" name="transmission" value="manual">
+<label for="manual" class="lc">Manual</label>
+
+<input type="radio" id="auto" name="transmission" value="auto" >
+<label for="auto"class="lc">Automatic</label>
+<input type="radio" id="auto" name="transmission" value=" Auto&Manual" >
+<label for="auto"class="lc">Automatic & Manual</label>
+<div class="row">
+    <div class="col-md-6">
+        
+            <input type="text" class="form-control" placeholder=" name" aria-label=" name">
+         
+    </div>
+   
+    <div class="col-md-6">
+        
+        <input type="date" id="lesson-date" name="lesson-date"  required>
+         
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+          </div>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+          </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <input type="text" class="form-control" placeholder=" name" aria-label=" name">
+    </div>
+    <div class="col-md-6">
+        <input type="text" class="form-control" placeholder=" name" aria-label=" name">
+    </div>
+</div>
+   </div>
+</div>
